@@ -1,0 +1,18 @@
+database:
+  host: localhost
+  name: quartz-demo
+
+spring:
+  application:
+    name: spring-quartz-demo
+  datasource:
+    username: root
+    password:
+    url: jdbc:mysql://${database.host}:3306/${database.name}?characterEncoding=utf-8&useUnicode=true&useSSL=false&rewriteBatchedStatements=TRUE
+
+liquibase:
+  enabled: true
+  change-log: classpath:config/liquibase/master.xml
+
+server:
+  port: 8888
