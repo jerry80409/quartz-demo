@@ -17,7 +17,6 @@ public class QuartzDemoApplication {
         SpringApplication app = new SpringApplication(QuartzDemoApplication.class);
         DefaultProfileUtil.addDefaultProfile(app);
         Environment env = app.run(args).getEnvironment();
-        SpringApplication.run(QuartzDemoApplication.class, args);
 
         log.info("\n----------------------------------------------------------\n\t" +
                 "'{}' is running with '{}' profile.\n\t" +
